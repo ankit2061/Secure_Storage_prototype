@@ -1,0 +1,12 @@
+flask
+flask-cors
+streamlit
+mega.py
+PyJWT
+bcrypt
+pymongo
+python-dotenv
+cryptography
+requests
+pandas
+pillow
