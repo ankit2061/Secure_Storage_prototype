@@ -10,3 +10,12 @@ cryptography
 requests
 pandas
 pillow
+gunicorn
+Flask
+Flask-Cors
+gunicorn
+python-dotenv
+pymongo
+bcrypt
+PyJWT
+cryptography
