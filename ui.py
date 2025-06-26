@@ -44,7 +44,7 @@ st.markdown("""
 
 class HealAIStorageUI:
     def __init__(self):
-        self.api_base_url = os.getenv('API_BASE_URL', 'http://localhost:5001')
+        self.api_base_url = os.getenv('API_BASE_URL', 'http://localhost:5002')
         print(f"🔗 Streamlit connecting to: {self.api_base_url}")
         
     def init_session_state(self):
@@ -85,7 +85,7 @@ class HealAIStorageUI:
                 st.error(f"❌ API server responded with status: {response.status_code}")
                 return False
         except requests.exceptions.ConnectionError:
-            st.error("❌ Cannot connect to API server. Please ensure Flask API is running on http://localhost:5001")
+            st.error("❌ Cannot connect to API server. Please ensure Flask API is running on http://localhost:5002")
             st.code("python app.py", language="bash")
             return False
         except Exception as e:

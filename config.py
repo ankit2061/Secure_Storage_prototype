@@ -20,7 +20,7 @@ class Config:
     ALLOWED_EXTENSIONS = os.getenv('ALLOWED_EXTENSIONS', 'pdf,doc,docx,txt,jpg,png,jpeg,csv,xlsx').split(',')
     
     # API Configuration
-    API_BASE_URL = os.getenv('API_BASE_URL', 'http://localhost:5001')
+    API_BASE_URL = os.getenv('API_BASE_URL', 'http://localhost:5002')
     STREAMLIT_PORT = int(os.getenv('STREAMLIT_PORT', 8501))
     
     @staticmethod

@@ -213,8 +213,8 @@ def get_audit_logs(user_id, username):
 
 if __name__ == '__main__':
     print("\n🎯 Starting Flask API server...")
-    print("📡 API will be available at: http://localhost:5001")
-    print("🔗 Health check: http://localhost:5001/health")
+    print("📡 API will be available at: http://localhost:5002")
+    print("🔗 Health check: http://localhost:5002/health")
     print("📖 Available endpoints:")
     print("   POST /register - User registration")
     print("   POST /login - User authentication")
@@ -225,4 +225,4 @@ if __name__ == '__main__':
     print("   GET /audit - Get audit logs")
     print("\n🚀 Server starting...")
     
-    app.run(debug=True, host='0.0.0.0', port=5001)
+    app.run(debug=True, host='0.0.0.0', port=5002)
